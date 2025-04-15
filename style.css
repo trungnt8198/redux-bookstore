@@ -25,11 +25,15 @@ p {
   padding: 0;
 }
 
-.add-book,
+#add-book,
 .filter-book {
   display: flex;
   gap: 10px;
   margin-bottom: 20px;
+}
+
+.filter-book {
+  margin-top: 12px;
 }
 
 input[type="text"] {

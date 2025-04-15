@@ -58,6 +58,7 @@ addBookForm.addEventListener("submit", function (e) {
   e.preventDefault();
   const book = Object.fromEntries(new FormData(e.target));
   book.id = getCurrentId();
+  book.name = book.name.trim();
   addBook(book);
 });
 

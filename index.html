@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản lý sách</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <h1>Quản lý sách</h1>
+
+      <form id="add-book">
+        <input type="text" name="name" placeholder="Nhập tên sách" />
+        <button>Thêm sách</button>
+      </form>
+
+      <ul id="book-list" class="book-list"></ul>
+
+      <div class="filter-book">
+        <input type="text" placeholder="Tìm kiếm sách..." id="filter-input" />
+      </div>
+
+      <p id="result-count"></p>
+    </div>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

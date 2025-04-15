@@ -56,11 +56,12 @@ renderBooks(store.getState().books);
 
 addBookForm.addEventListener("submit", function (e) {
   e.preventDefault();
-  const bookName = e.target.value.trim();
-  if (bookName.length > 0) {
-    const book = Object.fromEntries(new FormData(e.target));
+  const book = Object.fromEntries(new FormData(e.target));
+  book.name = book.name.trim();
+  if (book.name.length > 0) {
     book.id = getCurrentId();
     addBook(book);
+    e.target.reset();
   }
 });
 
